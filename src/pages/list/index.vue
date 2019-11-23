@@ -1,9 +1,11 @@
 <template>
-<div class="home-wrap">wwww</div>
+<div class="list-warp">
+    this is list
+</div>
 </template>
 
 <script>
-export default {
+  export default {
     data() {
       return {}
     },
@@ -12,8 +14,9 @@ export default {
     },
     components: {},
     methods: {}
-}
+  }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
 </style>

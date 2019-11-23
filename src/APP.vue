@@ -1,15 +1,25 @@
 <template>
-  <div>
-
-  </div>
+<div id="app">
+    App.vue
+    <router-link to="/list">List</router-link>
+    <router-link to="/home">home</router-link>
+    <router-view></router-view>
+</div>
 </template>
 
 <script>
   export default {
-    
+    data() {
+      return {}
+    },
+    components: {},
+    computed: {},
+    mounted() {
+    },
+    methods: {}
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="" rel="stylesheet/">
 
 </style>

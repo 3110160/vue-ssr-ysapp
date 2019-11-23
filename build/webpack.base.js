@@ -3,12 +3,16 @@ const {
   VueLoaderPlugin
 } = require('vue-loader')
 module.exports = {
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].bundle.js'
   },
   resolve: {
-    extentions: ['.js', '.vue']
+    extensions: ['.vue', '.js', '.json'],
+    alias:{
+      '@': path.resolve(__dirname, '../src')
+    },
   },
   module: {
     rules: [{
