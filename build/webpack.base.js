@@ -3,7 +3,8 @@ const {
   VueLoaderPlugin
 } = require('vue-loader')
 module.exports = {
-  devtool: 'source-map',
+  // watch:true,
+  // devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].bundle.js'

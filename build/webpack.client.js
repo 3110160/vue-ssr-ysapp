@@ -21,7 +21,7 @@ module.exports = merge(base,{
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../index.html'),
       favicon:path.resolve(__dirname, '../public/favicon.ico'),
-      filename: 'index.html'
+      filename: 'index3.html'
     })
   ]
 })

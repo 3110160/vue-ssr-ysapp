@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    App.vue
+    <h1>vue ssr</h1>
     <router-link to="/list">List</router-link>
     <router-link to="/home">home</router-link>
     <router-view></router-view>

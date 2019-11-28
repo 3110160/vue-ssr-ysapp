@@ -10,6 +10,7 @@ const { createBundleRenderer } = require('vue-server-renderer')
 
 const server = express();
 server.use(express.static('dist'))
+
 // 服务端执行vue操作
 // const bundle = fs.readFileSync(path.resolve(__dirname, './dist/server.bundle.js'), 'utf8')
 // 记录js文件的内容
@@ -46,5 +47,5 @@ server.get('*', (req, res) => {
 })
 
 server.listen(9000, () => {
-    console.log('服务器已启动9000')
+    console.log('listen on 9000')
 })

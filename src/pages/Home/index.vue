@@ -1,19 +1,30 @@
 <template>
-<div class="home-wrap">wwww</div>
+  <div class="home">
+    <div v-for="item of hotGoods" :key="item.goodsId">
+      <img :src="item.goodsDefaultImage" alt="tu" width="80">
+    </div>
+  </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
-    data() {
-      return {}
-    },
-    computed: {},
-    mounted() {
-    },
-    components: {},
-    methods: {}
-}
+  asyncData({ store, route }) {
+    console.log("getHot");
+    return store.dispatch("getHot");
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState({
+      hotGoods: state => state.home.hotGoods
+    })
+  },
+  mounted() {},
+  components: {}
+};
 </script>
 
-<style lang="scss">
+<style lang="less">
 </style>
