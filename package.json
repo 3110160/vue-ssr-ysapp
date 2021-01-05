@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/3110160/vue-ssr-ysapp#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "koa": "^2.11.0",
     "vue": "^2.6.10",
